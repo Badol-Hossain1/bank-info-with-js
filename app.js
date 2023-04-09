@@ -44,3 +44,20 @@ document.getElementById("remove-item").addEventListener("click", function () {
 
   input.innerText = "0";
 });
+
+document.getElementById("tex-id").addEventListener("click", function () {
+  // const input = document.getElementById('tax')
+  // const value = input.innerText
+  // const inputNum = parseInt(value) 10
+  const total = document.getElementById("tk");
+  const totalValue = total.innerText;
+  const totalNum = parseInt(totalValue);
+  console.log();
+  const all = totalNum * 0.1;
+  const tex = document.getElementById("total-tax");
+  tex.innerText = all;
+  const sub = all + totalNum;
+  console.log(sub);
+  const allIn = document.getElementById("total");
+  allIn.innerText = sub;
+});
